@@ -25,4 +25,16 @@ CREATE TABLE post (
     CONSTRAINT fk_post_usuario FOREIGN KEY (usuario_id) REFERENCES usuario (id)
     );
 
-SELECT * FROM post;
+CREATE TABLE avaliacao (
+    id int NOT NULL AUTO_INCREMENT,
+    nota int NOT NULL,
+    comentario varchar(255) NOT NULL,
+    usuario_id int NOT NULL,
+    post_id int NOT NULL,
+    data_criacao datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (id),
+    CONSTRAINT fk_avaliacao_usuario FOREIGN KEY (usuario_id) REFERENCES usuario (id),
+    CONSTRAINT fk_avaliacao_post FOREIGN KEY (post_id) REFERENCES post (id)
+    );
+    
+    insert into post (titulo, texto, usuario_id) VALUES ('Uau', 'Incrivel', 1);

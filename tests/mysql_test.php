@@ -6,8 +6,7 @@
 
     insert_teste('Renan', 'renan@ifsp.edu.br', '310304');
     buscar_teste();
-    update_teste(38, 'Ednaldo', 'pereira@gmail.com');
-    buscar_teste();
+    update_teste(2, 'Renanzinho2', 'renancastro2@ifsp.edu.br');
 
     //Teste inserção banco de dados
     function insert_teste($nome, $email, $senha) : void
@@ -18,7 +17,7 @@
     //Teste select banco de dados
     function buscar_teste() : void
     {
-        $usuarios = buscar('usuario',['id','nome','email'], [], '');
+        $usuarios = buscar('usuario',[ 'id','nome','email'], [], '');
         print_r($usuarios);
     }
     //Teste update banco de dados
