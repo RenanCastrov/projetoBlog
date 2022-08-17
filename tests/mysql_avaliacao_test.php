@@ -4,6 +4,10 @@
     require_once '../core/sql.php';
     require_once '../core/mysql.php';
 
+
+    buscar_test();
+    delete_test(1);
+
     //Teste inserção banco de dados
     function insert_test($nota, $comentario, $post_id, $usuario_id) : void
     {
@@ -22,5 +26,10 @@
         $dados = ['nota'  => $nota,'comentario' => $comentario,'post_id' => $post_id,'usuario_id' => $usuario_id];
         $criterio = [['id', '=', $id]];
         atualiza('avaliacao',$dados,$criterio);
+    }
+    function delete_test($id) : void
+    {
+        $criterio = [['id', '=', $id]];
+        delete('avaliacao',$criterio);
     }
 ?>

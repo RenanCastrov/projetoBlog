@@ -38,3 +38,5 @@ CREATE TABLE avaliacao (
     );
     
     insert into post (titulo, texto, usuario_id) VALUES ('Uau', 'Incrivel', 1);
+    
+    select * from usuario;
