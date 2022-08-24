@@ -173,7 +173,7 @@
             $comando = 'mysqli_stmt_bind_param($stmt,';
             $comando .= "'" . implode('', $tipo). "'";
             $comando .= ', $' . implode(', $', $campos_criterio);
-            $comando .= ');'; 
+            $comando .= ');';
 
             eval($comando);
         }
