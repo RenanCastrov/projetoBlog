@@ -37,6 +37,4 @@ CREATE TABLE avaliacao (
     CONSTRAINT fk_avaliacao_post FOREIGN KEY (post_id) REFERENCES post (id)
     );
     
-    insert into post (titulo, texto, usuario_id) VALUES ('Uau', 'Incrivel', 1);
-    
     select * from usuario;
