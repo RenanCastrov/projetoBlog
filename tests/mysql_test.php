@@ -1,9 +1,11 @@
 <?php
+    //Aqui usamos o comando "require_once" para utilizarmos os códigos dos arquivos a seguir:
     require_once '../includes/funcoes.php';
     require_once '../core/conexao_mysql.php';
     require_once '../core/sql.php';
     require_once '../core/mysql.php';
 
+    //Aqui realizamos teste de inserção, busca e atualização de dados.
     insert_teste('Renan', 'renan@ifsp.edu.br', '310304');
     buscar_teste();
     update_teste(2, 'Renanzinho2', 'renancastro2@ifsp.edu.br');

@@ -1,8 +1,14 @@
 <?php
+    /*Nesse arquivo, após a conexão estabelecida entre o MySQL e o PHP, nós estabelecemos
+    comandos PHP para a inclusão de dados no banco MySQL, e através das seguintes funções
+    conseguimos adaptar os dados coletados na página web em dados padrões para o MySQL.
+    */
     function insere(string $entidade, array $dados) : bool
     {
+        /*A função "insere" basicamente insere no banco de dados os dados coletados
+        na página web, através de comandos PHP que se relacionam com o MySQL.
+        */
         $retorno = false;
-
         foreach ($dados as $campo => $dado)
         {
             $coringa[$campo] = '?';
@@ -33,6 +39,10 @@
     }
     function atualiza(string $entidade, array $dados, array $criterio = []) : bool
     {
+        /*A função "atualiza" simplesmente funciona como um comando UPDATE no MySQL
+        atualizando os dados no banco, através de uma solicitação na página web.
+        */
+
         $retorno = false;
 
         foreach ($dados as $campo => $dado)
@@ -91,6 +101,10 @@
     }
     function deleta(string $entidade, array $criterio = []) : bool
     {
+        /*A função "deleta" basicamente deleta do banco de dados os dados, através de
+        uma solicitação na página web
+        */
+
         $retorno = false;
 
         $coringa_criterio = [];
@@ -140,6 +154,10 @@
     function buscar(string $entidade, array $campos = ["*"], array $criterio = [], 
     string $ordem = null) : array
     {
+        /*A função "buscar", através de uma solicitação feita na página web,
+        busca no banco de dados, dados solicitados na página web.
+        */
+
         $retorno = false;
         $coringa_criterio = [];
 

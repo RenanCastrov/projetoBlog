@@ -1,4 +1,5 @@
 <?php
+    //Esse arquivo basicamente serve para conectarmos o banco de dados à nossa aplicação PHP
     function conecta() : mysqli
     {
         $servidor = 'localhost';

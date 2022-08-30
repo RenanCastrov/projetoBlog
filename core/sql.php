@@ -1,6 +1,11 @@
 <?php
+    /*Aqui atribuímos a funções PHP, comandos SQL que inserem, atualizam e deletam dados.
+    
+    */
     function insert(string $entidade, array $dados) : string
     {
+        //A função "insert" adapta o comando SQL de inserção de dados para o PHP
+        //Permitindo que dados sejam inseridos no banco de dados através da página web
         $instrucao = "INSERT INTO {$entidade}";
 
         $campos = implode(', ', array_keys($dados));
@@ -13,6 +18,9 @@
     }
     function update(string $entidade, array $dados, array $criterio = []) : string
     {
+        /*A função "update" adapta o comando SQL de atualização de dados para o PHP
+        permitindo que dados sejam atualizados no banco de dados através da página web
+        */
         $instrucao = "UPDATE {$entidade}";
 
         foreach($dados as $campo => $dado)
@@ -35,6 +43,9 @@
     }
     function delete(string $entidade, array $criterio = []) : string
     {
+        /*A função "delete" adapta o comando SQL de exclusão de dados para o PHP
+        permitindo que dados sejam deletados no banco de dados através da página web
+        */
         $instrucao = "DELETE FROM {$entidade}";
 
         if(!empty($criterio))
@@ -51,6 +62,10 @@
     function select(string $entidade, array $campos, array $criterio = [],
     string $ordem = null) : string
     {
+        /*A função "select" adapta o comando SQL de selecão de dados do banco
+        Permitindo que através de uma solicitação na página web, dados possam ser mostrados,
+        e até mesmo ordenados.
+        */
         $instrucao = "SELECT " . implode(', ' ,$campos);
         $instrucao .= " FROM {$entidade}";
 

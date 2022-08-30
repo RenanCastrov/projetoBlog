@@ -1,6 +1,10 @@
 <?php
+    /*Aqui, usamos o comando "require_once", para usarmos o código do arquivo sql.php
+    onde estão armazenadas as funções SQL adaptadas para o PHP
+    */
     require_once '../core/sql.php';
-
+    
+    //Aqui declaramos os dados para o teste dos comandos. Usando a entidade "usuario" do banco de dados.
     $id = 1;
     $nome = 'renan';
     $email = 'renancastrinho@gmail.com';

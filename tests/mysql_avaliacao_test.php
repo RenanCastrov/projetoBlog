@@ -1,10 +1,11 @@
 <?php
+    //Aqui usamos o comando "require_once" para usar o código dos arquivos a seguir:
     require_once '../includes/funcoes.php';
     require_once '../core/conexao_mysql.php';
     require_once '../core/sql.php';
     require_once '../core/mysql.php';
 
-
+    //Aqui foi usado para fazer testes dos comandos de inserção, atualização, busca e exclusão de dados.
     buscar_test();
     delete_test(1);
 
@@ -27,6 +28,7 @@
         $criterio = [['id', '=', $id]];
         atualiza('avaliacao',$dados,$criterio);
     }
+    //Teste delete banco de dados
     function delete_test($id) : void
     {
         $criterio = [['id', '=', $id]];

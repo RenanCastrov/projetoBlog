@@ -3,3 +3,4 @@
     placeholder="Busca" aria-label="Busca">
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
 </form>
+<!--Essa é a barra de busca do Blog.-->
