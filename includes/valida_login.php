@@ -6,4 +6,5 @@
         header('Location: login_formulario.php');
         exit;
     }
+    //É o código de validação de login
 ?>
