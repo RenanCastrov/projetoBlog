@@ -61,7 +61,7 @@
                         </div>
                         <div class="form-group">
                                 <label for="texto">Texto:</label>
-                                <textarea class="form-group" type="text"
+                                <textarea class="form-control" type="text"
                                     require="require" id="texto" name="texto" rows="5">
                                     <?php echo $entidade['texto'] ?? '' ?>
                                 </textarea>
