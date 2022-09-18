@@ -1,5 +1,5 @@
 <?php
-    /*Aqui atribuímos a funções PHP, comandos SQL que inserem, atualizam e deletam dados.
+    /*Aqui atribuímos às funções PHP, comandos SQL que inserem, atualizam e deletam dados.
     
     */
     function insert(string $entidade, array $dados) : string
