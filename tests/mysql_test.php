@@ -1,4 +1,7 @@
 <?php
+    /*
+    Teste das funções do mysql.php
+    */
     //Aqui usamos o comando "require_once" para utilizarmos os códigos dos arquivos a seguir:
     require_once '../includes/funcoes.php';
     require_once '../core/conexao_mysql.php';

@@ -1,4 +1,5 @@
 <?php
+    /*Aqui é basicamente o repositório de todos os usuários */
     session_start();
     require_once '../includes/funcoes.php';
     require_once 'conexao_mysql.php';

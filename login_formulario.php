@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!--Código de login de um usuário-->
 <html>
     <head>
         <meta charset="UTF-8">

@@ -1,4 +1,5 @@
 <?php
+    /*Aqui é o repositório dos posts*/
     session_start();
     require_once '../includes/valida_login.php';
     require_once '../includes/funcoes.php';

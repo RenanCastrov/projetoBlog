@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!--Código de listagem de usuários para o admnistrador-->
 <html>
     <head>
         <title>Usuários | Projeto para Web com PHP</title>

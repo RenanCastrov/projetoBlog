@@ -1,6 +1,9 @@
 <?php
     /*Aqui, usamos o comando "require_once", para usarmos o código do arquivo sql.php
-    onde estão armazenadas as funções SQL adaptadas para o PHP
+    onde estão armazenadas as funções SQL.
+
+    Basicamente testamos as funções SQL armazenadas no sql.php, onde criamos, atualizamos ou deletamos um
+    usuário.
     */
     require_once '../core/sql.php';
     

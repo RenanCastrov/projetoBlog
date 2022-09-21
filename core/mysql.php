@@ -1,7 +1,6 @@
 <?php
-    /*Nesse arquivo, após a conexão estabelecida entre o MySQL e o PHP, nós estabelecemos
-    comandos PHP para a inclusão de dados no banco MySQL, e através das seguintes funções
-    conseguimos adaptar os dados coletados na página web em dados padrões para o MySQL.
+    /*Nesse arquivo, armazenaremos as funções que farão uso da extensão mysqli, que é uma das
+    maneiras de acessar um servidor de banco de dados.
     */
     function insere(string $entidade, array $dados) : bool
     {

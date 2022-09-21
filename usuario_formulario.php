@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!--Código de cadastro de novos usuários-->
 <html>
     <head>
         <meta charset="UTF-8">

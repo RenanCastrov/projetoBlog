@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!--Código de cadastro de posts-->
 <html>
     <head>
         <litle>Post | Projeto para Web com PHP</litle>
