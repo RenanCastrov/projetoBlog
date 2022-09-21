@@ -24,7 +24,7 @@
             $dados = [
                 'titulo'          => $titulo,
                 'texto'           => $texto,
-                'data_postagem'   => "data_postagem $hora_postagem",
+                'data_postagem'   => "$data_postagem $hora_postagem",
                 'usuario_id'      => $_SESSION['login']['usuario']['id']       
             ];
 
@@ -38,7 +38,7 @@
             $dados = [
                 'titulo'          => $titulo,
                 'texto'           => $texto,
-                'data_postagem'   => "data_postagem $hora_postagem",
+                'data_postagem'   => "$data_postagem $hora_postagem",
                 'usuario_id'      => $_SESSION['login']['usuario']['id']
             ];
 
