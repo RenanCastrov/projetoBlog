@@ -65,7 +65,6 @@
                     <?php 
                         include 'includes/rodape.php';
                     ?>
-                    <button class="btn btn-dark mt-5"><a href="index.php">Voltar</a></button>
                 </div>
             </div>
         </div>
