@@ -1,4 +1,4 @@
-crete database blog;
+create database blog;
 
 use blog;
 
